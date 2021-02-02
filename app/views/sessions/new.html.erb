@@ -1,13 +1,13 @@
 <div class='login-page'>
   <div class='form'>
-    <h1>Log In</h1>
+    <h1>Log In to Access you Cart</h1>
     <div class='login-form'>
       <%= form_for(:session, url: login_path) do |f| %>
         <%= f.text_field :email, placeholder: "EMAIL" %>
         <%= f.password_field :password, placeholder: 'PASSWORD' %>
         <%= f.submit "Submit", class: 'submit' %>
       <% end %>
-      <%= link_to "Create Account", new_user_path %>
+      <%= link_to "Create Account!", new_user_path %>
     </div>
   </div>
 </div>
